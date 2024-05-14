@@ -3,12 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fakultas Pertanian</title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
-</head>
-
 <body data-spy="scroll" data-target=".navbar">
     <div id="fb-root"></div>
     <script>
@@ -22,35 +20,144 @@
         }(document, 'script', 'facebook-jssdk'));
     </script>
 
-    <div class="navbar navbar-inverse navbar-static-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success shadow">
         <div class="container">
-            <div class="navbar-header">
-                <a href="?" title="Fakultas Pertanian">
-                    <img src="logo_header.png" alt="Logo" style="float:left;">
-                </a>
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-            </div>
-            <div id="navbar" class="navbar-collapse collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="./">Beranda</a>
+            <a href="?" class="navbar-brand d-flex align-items-center">
+                <img src="logo_header.png" alt="Logo" style="height: 50px; margin-right: 15px;">
+                <span>Fakultas Pertanian</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./">Beranda</a>
                     </li>
-                    <!-- Tambahkan item menu lainnya di sini -->
+                    <!-- Profil Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarProfil" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Profil
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarProfil">
+                            <a class="dropdown-item" href="?page=menu&id=115">Sambutan Dekan</a>
+                            <a class="dropdown-item" href="?page=menu&id=100">Sejarah</a>
+                            <a class="dropdown-item" href="?page=menu&id=57">Visi, Misi & Tujuan</a>
+                            <a class="dropdown-item" href="?page=menu&id=101">Struktur Organisasi</a>
+                            <a class="dropdown-item" href="?page=menu&id=124">SDM</a>
+                            <a class="dropdown-item" href="?page=menu&id=91">Akreditasi</a>
+                        </div>
+                    </li>
+                    <!-- Culture and Conservation Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarCulture" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Culture and Conservation
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarCulture">
+                            <a class="dropdown-item" href="?page=menu&id=148">Teknologi Tanaman</a>
+                        </div>
+                    </li>
+                    <!-- PMB Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarPMB" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            PMB
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarPMB">
+                            <a class="dropdown-item" href="?page=menu&id=133">Jadwal PMB</a>
+                            <a class="dropdown-item" href="https://pmb.unigal.ac.id/?daftar=290538" target="_blank">Daftar Sekarang</a>
+                        </div>
+                    </li>
+                    <!-- Program Studi Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarProgramStudi" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Program Studi
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarProgramStudi">
+                            <a class="dropdown-item" href="https://agribisnis.faperta.unigal.ac.id" target="_blank">Agribisnis</a>
+                        </div>
+                    </li>
+                    <!-- Akademik Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarAkademik" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Akademik
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarAkademik">
+                            <a class="dropdown-item" href="?page=menu&id=128">Kurikulum</a>
+                            <a class="dropdown-item" href="?page=menu&id=129">Kalender Akademik</a>
+                        </div>
+                    </li>
+                    <!-- Jurnal Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarJurnal" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Jurnal
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarJurnal">
+                            <a class="dropdown-item" href="https://jurnal.unigal.ac.id/index.php/agroinfogaluh" target="_blank">Agroinfo Galuh</a>
+                            <a class="dropdown-item" href="https://jurnal.unigal.ac.id/index.php/mimbaragribisnis" target="_blank">Mimbar Agribisnis</a>
+                        </div>
+                    </li>
+                    <!-- SPMI Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarSPMI" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            SPMI
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarSPMI">
+                            <a class="dropdown-item" href="?page=menu&id=136">Kebijakan Mutu</a>
+                            <a class="dropdown-item" href="?page=menu&id=137">Manual Mutu</a>
+                            <a class="dropdown-item" href="?page=menu&id=138">Manual Prosedur</a>
+                            <a class="dropdown-item" href="?page=menu&id=139">Formulir Mutu</a>
+                            <div class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle" href="#">Evaluasi</a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Evaluasi Awal Perkuliahan</a>
+                                    <a class="dropdown-item" href="#">Evaluasi Akhir Perkuliahan</a>
+                                    <a class="dropdown-item" href="#">Evaluasi Pengguna Lulusan</a>
+                                    <a class="dropdown-item" href="#">Evaluasi Pemahaman Visi Misi</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- Kemahasiswaan Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarKemahasiswaan" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Kemahasiswaan
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarKemahasiswaan">
+                            <a class="dropdown-item" href="?page=menu&id=88">SEMA</a>
+                            <a class="dropdown-item" href="?page=menu&id=89">MPM</a>
+                        </div>
+                    </li>
+                    <!-- Tautan Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarTautan" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Tautan
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarTautan">
+                            <a class="dropdown-item" href="https://siakad.unigal.ac.id" target="_blank">SIAKAD</a>
+                            <a class="dropdown-item" href="https://faperta.unigal.ac.id/library/" target="_blank">Digital Library</a>
+                            <a class="dropdown-item" href="https://linklearn.unigal.ac.id/" target="_blank">e-Learning</a>
+                            <div class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle" href="#">PERHEPI</a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="https://www.perhepi.org" target="_blank">Website PERHEPI</a>
+                                    <a class="dropdown-item" href="?page=menu&id=109">Kepengurusan</a>
+                                    <a class="dropdown-item" href="?page=menu&id=98">Kegiatan</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- Tracer Study -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://tracerstudy.kemdikbud.go.id/kuesioner" target="_blank">Tracer Study</a>
+                    </li>
                 </ul>
             </div>
         </div>
-    </div>
+    </nav>
 
-    <!-- Panggil file JavaScript Bootstrap lokal -->
-    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
 </body>
 </html>
-<body>
 
 
     <script src="assets/js/bootstrap.min.js"></script>
