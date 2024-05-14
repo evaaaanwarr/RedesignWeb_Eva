@@ -20,146 +20,159 @@
         }(document, 'script', 'facebook-jssdk'));
     </script>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-success shadow">
+    <!-- HEADER -->
+    <div class="header">
         <div class="container">
-            <a href="?" class="navbar-brand d-flex align-items-center">
-                <img src="logo_header.png" alt="Logo" style="height: 50px; margin-right: 15px;">
-                <span>Fakultas Pertanian</span>
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="./">Beranda</a>
-                    </li>
-                    <!-- Profil Dropdown -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarProfil" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Profil
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarProfil">
-                            <a class="dropdown-item" href="?page=menu&id=115">Sambutan Dekan</a>
-                            <a class="dropdown-item" href="?page=menu&id=100">Sejarah</a>
-                            <a class="dropdown-item" href="?page=menu&id=57">Visi, Misi & Tujuan</a>
-                            <a class="dropdown-item" href="?page=menu&id=101">Struktur Organisasi</a>
-                            <a class="dropdown-item" href="?page=menu&id=124">SDM</a>
-                            <a class="dropdown-item" href="?page=menu&id=91">Akreditasi</a>
-                        </div>
-                    </li>
-                    <!-- Culture and Conservation Dropdown -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarCulture" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Culture and Conservation
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarCulture">
-                            <a class="dropdown-item" href="?page=menu&id=148">Teknologi Tanaman</a>
-                        </div>
-                    </li>
-                    <!-- PMB Dropdown -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarPMB" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            PMB
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarPMB">
-                            <a class="dropdown-item" href="?page=menu&id=133">Jadwal PMB</a>
-                            <a class="dropdown-item" href="https://pmb.unigal.ac.id/?daftar=290538" target="_blank">Daftar Sekarang</a>
-                        </div>
-                    </li>
-                    <!-- Program Studi Dropdown -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarProgramStudi" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Program Studi
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarProgramStudi">
-                            <a class="dropdown-item" href="https://agribisnis.faperta.unigal.ac.id" target="_blank">Agribisnis</a>
-                        </div>
-                    </li>
-                    <!-- Akademik Dropdown -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarAkademik" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Akademik
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarAkademik">
-                            <a class="dropdown-item" href="?page=menu&id=128">Kurikulum</a>
-                            <a class="dropdown-item" href="?page=menu&id=129">Kalender Akademik</a>
-                        </div>
-                    </li>
-                    <!-- Jurnal Dropdown -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarJurnal" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Jurnal
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarJurnal">
-                            <a class="dropdown-item" href="https://jurnal.unigal.ac.id/index.php/agroinfogaluh" target="_blank">Agroinfo Galuh</a>
-                            <a class="dropdown-item" href="https://jurnal.unigal.ac.id/index.php/mimbaragribisnis" target="_blank">Mimbar Agribisnis</a>
-                        </div>
-                    </li>
-                    <!-- SPMI Dropdown -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarSPMI" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            SPMI
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarSPMI">
-                            <a class="dropdown-item" href="?page=menu&id=136">Kebijakan Mutu</a>
-                            <a class="dropdown-item" href="?page=menu&id=137">Manual Mutu</a>
-                            <a class="dropdown-item" href="?page=menu&id=138">Manual Prosedur</a>
-                            <a class="dropdown-item" href="?page=menu&id=139">Formulir Mutu</a>
-                            <div class="dropdown-submenu">
-                                <a class="dropdown-item dropdown-toggle" href="#">Evaluasi</a>
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="#">Evaluasi Awal Perkuliahan</a>
-                                    <a class="dropdown-item" href="#">Evaluasi Akhir Perkuliahan</a>
-                                    <a class="dropdown-item" href="#">Evaluasi Pengguna Lulusan</a>
-                                    <a class="dropdown-item" href="#">Evaluasi Pemahaman Visi Misi</a>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <!-- Kemahasiswaan Dropdown -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarKemahasiswaan" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Kemahasiswaan
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarKemahasiswaan">
-                            <a class="dropdown-item" href="?page=menu&id=88">SEMA</a>
-                            <a class="dropdown-item" href="?page=menu&id=89">MPM</a>
-                        </div>
-                    </li>
-                    <!-- Tautan Dropdown -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarTautan" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Tautan
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarTautan">
-                            <a class="dropdown-item" href="https://siakad.unigal.ac.id" target="_blank">SIAKAD</a>
-                            <a class="dropdown-item" href="https://faperta.unigal.ac.id/library/" target="_blank">Digital Library</a>
-                            <a class="dropdown-item" href="https://linklearn.unigal.ac.id/" target="_blank">e-Learning</a>
-                            <div class="dropdown-submenu">
-                                <a class="dropdown-item dropdown-toggle" href="#">PERHEPI</a>
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="https://www.perhepi.org" target="_blank">Website PERHEPI</a>
-                                    <a class="dropdown-item" href="?page=menu&id=109">Kepengurusan</a>
-                                    <a class="dropdown-item" href="?page=menu&id=98">Kegiatan</a>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <!-- Tracer Study -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://tracerstudy.kemdikbud.go.id/kuesioner" target="_blank">Tracer Study</a>
-                    </li>
-                </ul>
+            <div class="row">
+                <div class="col-md-auto d-flex align-items-center">
+                    <a class="header-logo" href="index.html"><img src="assets/img/logo/logo_fakultas pertanian.png" alt="logo" /></a>
+                </div>
+                <div class="col-md-auto d-flex align-items-center">
+                    <div class="header-text">
+                        <h1>FAKULTAS PERTANIAN</h1>
+                        <p class="d-none d-md-block">UNIVERSITAS GALUH</p>
+                        <p class="d-none d-md-block">Mewujudkan manusia Berbudi Pekerti Luhur, Berprestasi Unggul, Berwawasan lingkungan dan Berjiwa Wirausaha</p>
+                    </div>
+                </div>
             </div>
         </div>
-    </nav>
+    </div>
+    <!-- END HEADER -->
 
-    <script src="assets/js/bootstrap.min.js"></script>
+    <body>
+    </head>
+    <body>
+    
+    <div class="navbar">
+      <a href="#beranda">Beranda</a>
+    
+      <div class="dropdown">
+        <button class="dropbtn" onclick="toggleDropdown('profilDropdown')">Profil</button>
+        <div class="dropdown-content" id="profilDropdown">
+          <a href="#sambutan-dekan">Sambutan Dekan</a>
+          <a href="#sejarah">Sejarah</a>
+          <a href="#visi-misi-tujuan">Visi, Misi & Tujuan</a>
+          <a href="#struktur-organisasi">Struktur Organisasi</a>
+          <a href="#sdm">SDM</a>
+          <a href="#akreditasi">Akreditasi</a>
+        </div>
+      </div>
+    
+      <div class="dropdown">
+        <button class="dropbtn" onclick="toggleDropdown('cultureDropdown')">Culture and Conversation</button>
+        <div class="dropdown-content" id="cultureDropdown">
+          <a href="#teknologi-tanaman">Teknologi Tanaman</a>
+        </div>
+      </div>
+    
+      <div class="dropdown">
+        <button class="dropbtn" onclick="toggleDropdown('pmbDropdown')">PMB</button>
+        <div class="dropdown-content" id="pmbDropdown">
+          <a href="#jadwal-pmb">Jadwal PMB</a>
+          <a href="#daftar-sekarang">Daftar Sekarang</a>
+        </div>
+      </div>
+    
+      <div class="dropdown">
+        <button class="dropbtn" onclick="toggleDropdown('prodiDropdown')">Program Studi</button>
+        <div class="dropdown-content" id="prodiDropdown">
+          <a href="#agribisnis">Agribisnis</a>
+        </div>
+      </div>
+    
+      <div class="dropdown">
+        <button class="dropbtn" onclick="toggleDropdown('akademikDropdown')">Akademik</button>
+        <div class="dropdown-content" id="akademikDropdown">
+          <a href="#kurikulum">Kurikulum</a>
+          <a href="#kalender-akademik">Kalender Akademik</a>
+        </div>
+      </div>
+    
+      <div class="dropdown">
+        <button class="dropbtn" onclick="toggleDropdown('jurnalDropdown')">Jurnal</button>
+        <div class="dropdown-content" id="jurnalDropdown">
+          <a href="#agroinfo-galuh">Agroinfo Galuh</a>
+          <a href="#mimbar-agribisnis">Mimbar Agribisnis</a>
+        </div>
+      </div>
+    
+      <div class="dropdown">
+        <button class="dropbtn" onclick="toggleDropdown('spmiDropdown')">SPMI</button>
+        <div class="dropdown-content" id="spmiDropdown">
+          <a href="#kebijakan-mutu">Kebijakan Mutu</a>
+          <a href="#manual-mutu">Manual Mutu</a>
+          <a href="#manual-prosedur">Manual Prosedur</a>
+          <a href="#formulir-mutu">Formulir Mutu</a>
+          <div class="dropdown-sub">
+            <a href="#" onclick="toggleDropdown('evaluasiDropdown')">Evaluasi</a>
+            <div class="dropdown-subcontent" id="evaluasiDropdown">
+              <a href="#evaluasi-awal-perkuliahan">Evaluasi Awal Perkuliahan</a>
+              <a href="#evaluasi-akhir-perkuliahan">Evaluasi Akhir Perkuliahan</a>
+              <a href="#evaluasi-pengguna-lulusan">Evaluasi Pengguna Lulusan</a>
+              <a href="#evaluasi-pemahaman-visi-misi">Evaluasi Pemahaman Visi Misi</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="dropdown">
+        <button class="dropbtn" onclick="toggleDropdown('kemahasiswaanDropdown')">Kemahasiswaan</button>
+        <div class="dropdown-content" id="kemahasiswaanDropdown">
+          <a href="#sema">SEMA</a>
+          <a href="#mpm">MPM</a>
+        </div>
+      </div>
+    
+      <div class="dropdown">
+        <button class="dropbtn" onclick="toggleDropdown('tautanDropdown')">Tautan</button>
+        <div class="dropdown-content" id="tautanDropdown">
+          <a href="#siakad">SIAKAD</a>
+          <a href="#digital-library">Digital Library</a>
+          <a href="#e-learning">E-Learning</a>
+          <a href="#perhepi">PERHEPI</a>
+        </div>
+      </div>
+    
+      <a href="#teacher-study">Teacher Study</a>
+      <a href="#kontak">Kontak</a>
+    </div>
+    
+    <script>
+        function toggleDropdown(dropdownId) {
+            var dropdown = document.getElementById(dropdownId);
+            if (dropdown.style.display === "block") {
+                dropdown.style.display = "none";
+            } else {
+                dropdown.style.display = "block";
+            }
+        }
+    
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                for (var i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.style.display === "block") {
+                        openDropdown.style.display = "none";
+                    }
+                }
+    
+                var subDropdowns = document.getElementsByClassName("dropdown-subcontent");
+                for (var i = 0; i < subDropdowns.length; i++) {
+                    var openSubDropdown = subDropdowns[i];
+                    if (openSubDropdown.style.display === "block") {
+                        openSubDropdown.style.display = "none";
+                    }
+                }
+            }
+        }
+    </script>
+    
+    </body>
+    </html>
+    <!-- Include Bootstrap JS -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
 
-
-    <script src="assets/js/bootstrap.min.js"></script>
-</body>
-</html>
