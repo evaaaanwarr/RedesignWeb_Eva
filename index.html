@@ -8,7 +8,193 @@
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fakultas Pertanian</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body data-spy="scroll" data-target=".navbar">
+    <div id="fb-root"></div>
+    <script>
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v2.10";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <!-- HEADER -->
+    <div class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-auto d-flex align-items-center">
+                    <a class="header-logo" href="index.html"><img src="assets/img/logo/logo_fakultas pertanian.png" alt="logo" /></a>
+                </div>
+                <div class="col-md-auto d-flex align-items-center">
+                    <div class="header-text">
+                        <h1>FAKULTAS PERTANIAN</h1>
+                        <p class="d-none d-md-block">UNIVERSITAS GALUH</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END HEADER -->
+
+    <body>
+    </head>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Example</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom CSS */
+        .dropdown-subcontent {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#beranda">Beranda</a>
     
+        <div class="dropdown">
+            <button class="dropbtn" onclick="toggleDropdown('profilDropdown')">Profil</button>
+            <div class="dropdown-content" id="profilDropdown">
+                <a href="#sambutan-dekan">Sambutan Dekan</a>
+                <a href="#sejarah">Sejarah</a>
+                <a href="#visi-misi-tujuan">Visi, Misi & Tujuan</a>
+                <a href="#struktur-organisasi">Struktur Organisasi</a>
+                <a href="#sdm">SDM</a>
+                <a href="#akreditasi">Akreditasi</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn" onclick="toggleDropdown('cultureDropdown')">Culture and Conversation</button>
+            <div class="dropdown-content" id="cultureDropdown">
+                <a href="#teknologi-tanaman">Teknologi Tanaman</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn" onclick="toggleDropdown('pmbDropdown')">PMB</button>
+            <div class="dropdown-content" id="pmbDropdown">
+                <a href="#jadwal-pmb">Jadwal PMB</a>
+                <a href="#daftar-sekarang">Daftar Sekarang</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn" onclick="toggleDropdown('prodiDropdown')">Program Studi</button>
+            <div class="dropdown-content" id="prodiDropdown">
+                <a href="#agribisnis">Agribisnis</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn" onclick="toggleDropdown('akademikDropdown')">Akademik</button>
+            <div class="dropdown-content" id="akademikDropdown">
+                <a href="#kurikulum">Kurikulum</a>
+                <a href="#kalender-akademik">Kalender Akademik</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn" onclick="toggleDropdown('jurnalDropdown')">Jurnal</button>
+            <div class="dropdown-content" id="jurnalDropdown">
+                <a href="#agroinfo-galuh">Agroinfo Galuh</a>
+                <a href="#mimbar-agribisnis">Mimbar Agribisnis</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn" onclick="toggleDropdown('spmiDropdown')">SPMI</button>
+            <div class="dropdown-content" id="spmiDropdown">
+                <a href="#kebijakan-mutu">Kebijakan Mutu</a>
+                <a href="#manual-mutu">Manual Mutu</a>
+                <a href="#manual-prosedur">Manual Prosedur</a>
+                <a href="#formulir-mutu">Formulir Mutu</a>
+                <div class="dropdown-sub">
+                    <a href="#" onclick="toggleDropdown('evaluasiDropdown')">Evaluasi</a>
+                    <div class="dropdown-subcontent" id="evaluasiDropdown">
+                        <a href="#evaluasi-awal-perkuliahan">Evaluasi Awal Perkuliahan</a>
+                        <a href="#evaluasi-akhir-perkuliahan">Evaluasi Akhir Perkuliahan</a>
+                        <a href="#evaluasi-pengguna-lulusan">Evaluasi Pengguna Lulusan</a>
+                        <a href="#evaluasi-pemahaman-visi-misi">Evaluasi Pemahaman Visi Misi</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn" onclick="toggleDropdown('kemahasiswaanDropdown')">Kemahasiswaan</button>
+            <div class="dropdown-content" id="kemahasiswaanDropdown">
+                <a href="#sema">SEMA</a>
+                <a href="#mpm">MPM</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn" onclick="toggleDropdown('tautanDropdown')">Tautan</button>
+            <div class="dropdown-content" id="tautanDropdown">
+                <a href="#siakad">SIAKAD</a>
+                <a href="#digital-library">Digital Library</a>
+                <a href="#e-learning">E-Learning</a>
+                <a href="#perhepi">PERHEPI</a>
+            </div>
+        </div>
+
+        <a href="#teacher-study">Teacher Study</a>
+        <a href="#kontak">Kontak</a>
+    </div>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        function toggleDropdown(dropdownId) {
+            var dropdown = document.getElementById(dropdownId);
+            if (dropdown.style.display === "block") {
+                dropdown.style.display = "none";
+            } else {
+                dropdown.style.display = "block";
+            }
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                for (var i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.style.display === "block") {
+                        openDropdown.style.display = "none";
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Include Bootstrap JS -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
 
     <script src="assets/js/bootstrap.min.js"></script>
 </body>
