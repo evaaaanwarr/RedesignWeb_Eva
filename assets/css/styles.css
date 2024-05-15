@@ -308,3 +308,22 @@ h2 {
     width: 100px; /* Sesuaikan dengan kebutuhan Anda */
     height: auto; /* Biarkan tingginya menyesuaikan */
 }
+
+.info-box, .download-box, .agenda-box {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+}
+
+.info-header, .download-header, .agenda-header {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.list-unstyled li {
+    padding: 5px 0;
+}
