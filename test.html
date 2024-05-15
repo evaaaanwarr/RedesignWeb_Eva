@@ -38,147 +38,175 @@
     </div>
     <!-- END HEADER -->
 
-    <body>
-    </head>
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dropdown Example</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        /* Custom CSS */
-        .dropdown-subcontent {
-            display: none;
-        }
-    </style>
 </head>
 <body>
-    <div class="navbar">
-        <a href="#beranda">Beranda</a>
-    
-        <div class="dropdown">
-            <button class="dropbtn" onclick="toggleDropdown('profilDropdown')">Profil</button>
-            <div class="dropdown-content" id="profilDropdown">
-                <a href="#sambutan-dekan">Sambutan Dekan</a>
-                <a href="#sejarah">Sejarah</a>
-                <a href="#visi-misi-tujuan">Visi, Misi & Tujuan</a>
-                <a href="#struktur-organisasi">Struktur Organisasi</a>
-                <a href="#sdm">SDM</a>
-                <a href="#akreditasi">Akreditasi</a>
+    <!-- Navbar Section -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-green">
+        <div class="container">
+            <a class="navbar-brand" href="#">HOME</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="profileDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            PROFIL
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="profileDropdown">
+                            <li><a class="dropdown-item" href="/sambutan dekan/">Sambutan Dekan</a></li>
+                            <li><a class="dropdown-item" href="/sejarah/">Sejarah</a></li>
+                            <li><a class="dropdown-item" href="#">Visi, Misi & Tujuan</a></li>
+                            <li><a class="dropdown-item" href="#">Struktur Organisasi</a></li>
+                            <li><a class="dropdown-item" href="#">SDM</a></li>
+                            <li><a class="dropdown-item" href="#">Akreditasi</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="cultureDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            CULTURE AND CONVERSATION
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="cultureDropdown">
+                            <li><a class="dropdown-item" href="#">Teknologi Tanaman</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="pmbDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            PMB
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="pmbDropdown">
+                            <li><a class="dropdown-item" href="#">Jadwal PMB</a></li>
+                            <li><a class="dropdown-item" href="#">Daftar Sekarang</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="programDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            STUDY PROGRAM
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="programDropdown">
+                            <li><a class="dropdown-item" href="#">Agribisnis</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="academicDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            ACADEMIC
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="academicDropdown">
+                            <li><a class="dropdown-item" href="#">Kurikulum</a></li>
+                            <li><a class="dropdown-item" href="#">Kalender Akademik</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="journalDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            JURNAL
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="journalDropdown">
+                            <li><a class="dropdown-item" href="#">Agroinfo Galuh</a></li>
+                            <li><a class="dropdown-item" href="#">Mimbar Agribisnis</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="spmiDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            SPMI
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="spmiDropdown">
+                            <li><a class="dropdown-item" href="#">Kebijakan Mutu</a></li>
+                            <li><a class="dropdown-item" href="#">Manual Mutu</a></li>
+                            <li><a class="dropdown-item" href="#">Manual Prosedur</a></li>
+                            <li><a class="dropdown-item" href="#">Formulir Mutu</a></li>
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle" href="#">Evaluasi</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Evaluasi Awal Perkuliahan</a></li>
+                                    <li><a class="dropdown-item" href="#">Evaluasi Akhir Perkuliahan</a></li>
+                                    <li><a class="dropdown-item" href="#">Evaluasi Pengguna Lulusan</a></li>
+                                    <li><a class="dropdown-item" href="#">Evaluasi Pemahaman Visi Misi</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="studentDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            STUDENT AFFAIRS
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="studentDropdown">
+                            <li><a class="dropdown-item" href="#">SEMA</a></li>
+                            <li><a class="dropdown-item" href="#">MPM</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="linkDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            LINK
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="linkDropdown">
+                            <li><a class="dropdown-item" href="#">SIAKAD</a></li>
+                            <li><a class="dropdown-item" href="#">Digital Library</a></li>
+                            <li><a class="dropdown-item" href="#">e-Learning</a></li>
+                            <li><a class="dropdown-item" href="#">PERHEPI</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">TEACHER STUDY</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">CONTACT</a>
+                    </li>
+                </ul>
             </div>
         </div>
+    </nav>
 
-        <div class="dropdown">
-            <button class="dropbtn" onclick="toggleDropdown('cultureDropdown')">Culture and Conversation</button>
-            <div class="dropdown-content" id="cultureDropdown">
-                <a href="#teknologi-tanaman">Teknologi Tanaman</a>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+<!-- pimpinan fakultas -->
+<body>
+    <div class="container mt-4 custom-container">
+        <div class="col-md-4 custom-column">
+            <div class="info-box">
+                <h5 class="info-header">Latest Information</h5>
+                <ul class="list-unstyled">
+                    <li>18/04/2024 - Ujian Tengah Semester Genap T.A. 2023/2024</li>
+                    <li>18/04/2024 - SEMINAR NASIONAL HASIL PENELITIAN AGRIBISNIS VIII "Inovasi dan Regenerasi Sumber Daya Manusia di Sektor Pertanian"</li>
+                    <li>08/04/2023 - Ujian Tengah Semester Genap T.A. 2022/2023</li>
+                    <li>03/02/2022 - [2022] Seminar Nasional "INOVASI PERTANIAN BERKELANJUTAN : Peluang dan Arah Kebijakan Ketahanan Pang</li>
+                    <li>03/02/2022 - [2022] Kuliah Umum "Resiliensi dan strategi adaptasi sektor pertanian menyongsong normal baru"</li>
+                </ul>
+                <a href="#" class="btn btn-secondary btn-sm">view more</a>
             </div>
         </div>
-
-        <div class="dropdown">
-            <button class="dropbtn" onclick="toggleDropdown('pmbDropdown')">PMB</button>
-            <div class="dropdown-content" id="pmbDropdown">
-                <a href="#jadwal-pmb">Jadwal PMB</a>
-                <a href="#daftar-sekarang">Daftar Sekarang</a>
+        <div class="col-md-4 custom-column">
+            <div class="download-box">
+                <h5 class="download-header">Download</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#">PEDOMAN PENULISAN SKRIPSI FAKULTAS PERTANIAN [unduh]</a></li>
+                    <li><a href="#">Pedoman Seminar Akademik [unduh]</a></li>
+                    <li><a href="#">Sertifikat Akreditasi Prodi Agribisnis 2023-2028 [unduh]</a></li>
+                    <li><a href="#">Jadwal UTS Genap T.A. 2022/2023 [unduh]</a></li>
+                    <li><a href="#">PERSYARATAN SIDANG SKRIPSI FAKULTAS PERTANIAN [unduh]</a></li>
+                </ul>
+                <a href="#" class="btn btn-secondary btn-sm">view more</a>
             </div>
         </div>
-
-        <div class="dropdown">
-            <button class="dropbtn" onclick="toggleDropdown('prodiDropdown')">Program Studi</button>
-            <div class="dropdown-content" id="prodiDropdown">
-                <a href="#agribisnis">Agribisnis</a>
+        <div class="col-md-4 custom-column">
+            <div class="agenda-box">
+                <h5 class="agenda-header">Agenda of Activities</h5>
+                <ul class="list-unstyled">
+                    <li>Selasa, 14 Mei 2024 - SEMINAR NASIONAL HASIL PENELITIAN AGRIBISNIS VIII "Inovasi dan Regenerasi Sumber Daya Manusia di Sektor Pertanian" <a href="#">[lihat detail]</a></li>
+                    <li>Sabtu, 27 Mei 2023 - SEMINAR NASIONAL HASIL PENELITIAN AGRIBISNIS VII "Transformasi Sistem Pangan Berkelanjutan di Era Digital" <a href="#">[lihat detail]</a></li>
+                    <li>Sabtu, 05 Nov 2022 - KULIAH UMUM "Perencanaan Agribisnis Inovatif dan Adaptif" <a href="#">[lihat detail]</a></li>
+                    <li>Sabtu, 26 Mar 2022 - Seminar Nasional "INOVASI PERTANIAN BERKELANJUTAN : Peluang dan Arah Kebijakan Ketahanan Pangan di Era Normal Baru" <a href="#">[lihat detail]</a></li>
+                    <li>Sabtu, 26 Feb 2022 - Kuliah Umum "Resiliensi dan strategi adaptasi sektor pertanian menyongsong normal baru" oleh Budi Dharmawan, S.P., M.Si., Ph.D. (Ketua Program Studi Agribisnis Fakultas Pertanian Unsoed) <a href="#">[lihat detail]</a></li>
+                </ul>
+                <a href="#" class="btn btn-secondary btn-sm">view more</a>
             </div>
         </div>
-
-        <div class="dropdown">
-            <button class="dropbtn" onclick="toggleDropdown('akademikDropdown')">Akademik</button>
-            <div class="dropdown-content" id="akademikDropdown">
-                <a href="#kurikulum">Kurikulum</a>
-                <a href="#kalender-akademik">Kalender Akademik</a>
-            </div>
-        </div>
-
-        <div class="dropdown">
-            <button class="dropbtn" onclick="toggleDropdown('jurnalDropdown')">Jurnal</button>
-            <div class="dropdown-content" id="jurnalDropdown">
-                <a href="#agroinfo-galuh">Agroinfo Galuh</a>
-                <a href="#mimbar-agribisnis">Mimbar Agribisnis</a>
-            </div>
-        </div>
-
-        <div class="dropdown">
-            <button class="dropbtn" onclick="toggleDropdown('spmiDropdown')">SPMI</button>
-            <div class="dropdown-content" id="spmiDropdown">
-                <a href="#kebijakan-mutu">Kebijakan Mutu</a>
-                <a href="#manual-mutu">Manual Mutu</a>
-                <a href="#manual-prosedur">Manual Prosedur</a>
-                <a href="#formulir-mutu">Formulir Mutu</a>
-                <div class="dropdown-sub">
-                    <a href="#" onclick="toggleDropdown('evaluasiDropdown')">Evaluasi</a>
-                    <div class="dropdown-subcontent" id="evaluasiDropdown">
-                        <a href="#evaluasi-awal-perkuliahan">Evaluasi Awal Perkuliahan</a>
-                        <a href="#evaluasi-akhir-perkuliahan">Evaluasi Akhir Perkuliahan</a>
-                        <a href="#evaluasi-pengguna-lulusan">Evaluasi Pengguna Lulusan</a>
-                        <a href="#evaluasi-pemahaman-visi-misi">Evaluasi Pemahaman Visi Misi</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="dropdown">
-            <button class="dropbtn" onclick="toggleDropdown('kemahasiswaanDropdown')">Kemahasiswaan</button>
-            <div class="dropdown-content" id="kemahasiswaanDropdown">
-                <a href="#sema">SEMA</a>
-                <a href="#mpm">MPM</a>
-            </div>
-        </div>
-
-        <div class="dropdown">
-            <button class="dropbtn" onclick="toggleDropdown('tautanDropdown')">Tautan</button>
-            <div class="dropdown-content" id="tautanDropdown">
-                <a href="#siakad">SIAKAD</a>
-                <a href="#digital-library">Digital Library</a>
-                <a href="#e-learning">E-Learning</a>
-                <a href="#perhepi">PERHEPI</a>
-            </div>
-        </div>
-
-        <a href="#teacher-study">Teacher Study</a>
-        <a href="#kontak">Kontak</a>
     </div>
-    
-    <!-- Bootstrap JS -->
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-    <script>
-        function toggleDropdown(dropdownId) {
-            var dropdown = document.getElementById(dropdownId);
-            if (dropdown.style.display === "block") {
-                dropdown.style.display = "none";
-            } else {
-                dropdown.style.display = "block";
-            }
-        }
-
-        // Close the dropdown if the user clicks outside of it
-        window.onclick = function(event) {
-            if (!event.target.matches('.dropbtn')) {
-                var dropdowns = document.getElementsByClassName("dropdown-content");
-                for (var i = 0; i < dropdowns.length; i++) {
-                    var openDropdown = dropdowns[i];
-                    if (openDropdown.style.display === "block") {
-                        openDropdown.style.display = "none";
-                    }
-                }
-            }
-        }
-    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
 
@@ -214,51 +242,3 @@
 
 </html>
 
-<body>
-    <div class="container mt-4">
-        <div class="row">
-            <div class="col-md-4">
-                <div class="info-box">
-                    <h5 class="info-header">Info Terbaru</h5>
-                    <ul class="list-unstyled">
-                        <li>18/04/2024 - Ujian Tengah Semester Genap T.A. 2023/2024</li>
-                        <li>18/04/2024 - SEMINAR NASIONAL HASIL PENELITIAN AGRIBISNIS VIII "Inovasi dan Regenerasi Sumber Daya Manusia di Sektor Pertanian"</li>
-                        <li>08/04/2023 - Ujian Tengah Semester Genap T.A. 2022/2023</li>
-                        <li>03/02/2022 - [2022] Seminar Nasional "INOVASI PERTANIAN BERKELANJUTAN : Peluang dan Arah Kebijakan Ketahanan Pang</li>
-                        <li>03/02/2022 - [2022] Kuliah Umum "Resiliensi dan strategi adaptasi sektor pertanian menyongsong normal baru"</li>
-                    </ul>
-                    <a href="#" class="btn btn-secondary btn-sm">Info Lainnya</a>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="download-box">
-                    <h5 class="download-header">Download</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#">PEDOMAN PENULISAN SKRIPSI FAKULTAS PERTANIAN [unduh]</a></li>
-                        <li><a href="#">Pedoman Seminar Akademik [unduh]</a></li>
-                        <li><a href="#">Sertifikat Akreditasi Prodi Agribisnis 2023-2028 [unduh]</a></li>
-                        <li><a href="#">Jadwal UTS Genap T.A. 2022/2023 [unduh]</a></li>
-                        <li><a href="#">PERSYARATAN SIDANG SKRIPSI FAKULTAS PERTANIAN [unduh]</a></li>
-                    </ul>
-                    <a href="#" class="btn btn-secondary btn-sm">Download Lainnya</a>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="agenda-box">
-                    <h5 class="agenda-header">Agenda Kegiatan</h5>
-                    <ul class="list-unstyled">
-                        <li>Selasa, 14 Mei 2024 - SEMINAR NASIONAL HASIL PENELITIAN AGRIBISNIS VIII "Inovasi dan Regenerasi Sumber Daya Manusia di Sektor Pertanian" <a href="#">[lihat detail]</a></li>
-                        <li>Sabtu, 27 Mei 2023 - SEMINAR NASIONAL HASIL PENELITIAN AGRIBISNIS VII "Transformasi Sistem Pangan Berkelanjutan di Era Digital" <a href="#">[lihat detail]</a></li>
-                        <li>Sabtu, 05 Nov 2022 - KULIAH UMUM "Perencanaan Agribisnis Inovatif dan Adaptif" <a href="#">[lihat detail]</a></li>
-                        <li>Sabtu, 26 Mar 2022 - Seminar Nasional "INOVASI PERTANIAN BERKELANJUTAN : Peluang dan Arah Kebijakan Ketahanan Pangan di Era Normal Baru" <a href="#">[lihat detail]</a></li>
-                        <li>Sabtu, 26 Feb 2022 - Kuliah Umum "Resiliensi dan strategi adaptasi sektor pertanian menyongsong normal baru" oleh Budi Dharmawan, S.P., M.Si., Ph.D. (Ketua Program Studi Agribisnis Fakultas Pertanian Unsoed) <a href="#">[lihat detail]</a></li>
-                    </ul>
-                    <a href="#" class="btn btn-secondary btn-sm">Agenda Kegiatan Lainnya</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <script src="js/bootstrap.bundle.min.js"></script>
-</body>
-</html>

@@ -74,6 +74,21 @@
     }
   }
   
+ /* NAVIGATION BAR */
+.bg-green {
+    background-color: #03c03c; /* Green color */
+}
+
+.navbar-brand, .nav-link {
+    color: #fff !important;
+    font-size: 0.6rem; /* Adjust font size as needed */
+    font-weight: bold;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28%255, %255, %255, 0.5%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
 .dropdown-submenu {
     position: relative;
 }
@@ -83,40 +98,15 @@
     left: 100%;
     margin-top: -1px;
 }
-.navbar-dark.bg-success {
-    background-color: #228B22; /* Warna hijau untuk tema pertanian */
-    border-bottom: 3px solid #196619; /* Border bawah hijau lebih gelap */
-    padding: 10px 0;
-}
-
-.navbar-brand img {
-    height: 100px;
-    width: auto;
-    margin-right: 20px;
-}
-
-.navbar-brand span {
-    color: #fff;
-    font-weight: bold;
-    font-size: 1.5rem; /* Ukuran teks lebih besar */
-    text-shadow: 1px 1px 2px #000; /* Bayangan teks */
-}
-
-.nav-link {
-    color: #fff !important;
-    font-weight: bold;
-}
 
 .navbar-nav .nav-item .nav-link {
-    padding: 10px 15px;
+    padding: 15px 15px;
+    color: #fff !important;
+    font-weight: bold;
 }
 
 .dropdown-menu {
     background-color: #2E8B57; /* Warna hijau yang lebih gelap untuk dropdown */
-}
-
-.dropdown-item {
-    color: #fff !important;
 }
 
 .navbar-toggler {
@@ -130,10 +120,6 @@
 .dropdown-item {
     color: #fff !important;
     font-weight: bold;
-}
-
-.dropdown-submenu {
-    position: relative;
 }
 
 .dropdown-submenu .dropdown-menu {
@@ -151,10 +137,6 @@ body {
     font-family: Arial, sans-serif;
 }
 
-.navbar {
-    overflow: hidden;
-    background-color: #008819;
-}
 
 .navbar a, .dropdown .dropbtn {
     float: left;
@@ -175,55 +157,11 @@ body {
     overflow: hidden;
 }
 
-.dropdown .dropbtn {
-    font-size: 16px;
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 200px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-.dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-
 .dropdown-content a:hover {
     background-color: #ddd;
 }
 
 .dropdown:hover .dropdown-content {
-    display: block;
-}
-
-.dropdown-subcontent {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    left: 100%;
-    top: 0;
-    min-width: 200px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-.dropdown-content .dropdown-sub:hover .dropdown-subcontent {
     display: block;
 }
 
@@ -240,13 +178,15 @@ body {
     background-color: #00dd00;
 }
 
-.dropdown-sub {
-    position: relative;
-}
-
+/* Pimpinan fakultas */
 .team {
-    background-color: #f8f9fa;
+    background-color: #ffffff;
     padding: 50px 0;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto; /* Munculkan scrollbar horizontal jika diperlukan */
+    max-width: calc(100% - (lebar navbar));
+    background: url('assets/img/fakultas pertanian.png')
 }
 
 .container {
@@ -258,6 +198,7 @@ body {
 h2 {
     text-align: center;
     margin-bottom: 40px;
+    font-weight: bold;
 }
 
 .team-members {
@@ -265,6 +206,7 @@ h2 {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 .member {
@@ -276,6 +218,8 @@ h2 {
     width: 250px;
     height: 250px;
     margin-bottom: 35px;
+    width: 100px; /* Sesuaikan dengan kebutuhan Anda */
+    height: auto; /* Biarkan tingginya menyesuaikan */
 }
 
 .member h3 {
@@ -283,14 +227,7 @@ h2 {
 }
 
 .member p {
-    color: #888;
-}
-
-.team {
-    display: flex;
-    flex-wrap: nowrap;
-    overflow-x: auto; /* Munculkan scrollbar horizontal jika diperlukan */
-    max-width: calc(100% - (lebar navbar));
+    color: #000000;
 }
 
 .team-members {
@@ -303,14 +240,9 @@ h2 {
     margin-right: 20px; /* Atur jarak antar anggota */
 }
 
-/* Atur lebar gambar anggota tim */
-.member img {
-    width: 100px; /* Sesuaikan dengan kebutuhan Anda */
-    height: auto; /* Biarkan tingginya menyesuaikan */
-}
-
+/* info */
 .info-box, .download-box, .agenda-box {
-    border: 1px solid #ddd;
+    border: 1px solid #03c03c;
     padding: 15px;
     border-radius: 5px;
     background-color: #f9f9f9;
@@ -318,12 +250,23 @@ h2 {
 }
 
 .info-header, .download-header, .agenda-header {
-    background-color: #f0f0f0;
+    background-color: #cecece;
     padding: 10px;
     border-radius: 3px;
     font-weight: bold;
+    text-align: center;
 }
 
 .list-unstyled li {
     padding: 5px 0;
+}
+
+.custom-container {
+    display: flex;
+    justify-content: space-between;
+}
+.custom-column {
+    flex: 1;
+    margin-right: 15px;
+    margin-left: 15px;
 }
