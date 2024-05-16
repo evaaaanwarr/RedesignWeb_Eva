@@ -195,6 +195,11 @@ body {
     padding: 0 15px;
 }
 
+.pimpinan-container {
+    border: 2px solid #03c03c; /* Atur ketebalan dan warna garis pinggir */
+    padding: 20px; /* Untuk memberi ruang di dalam border */
+}
+
 h2 {
     text-align: center;
     margin-bottom: 40px;
@@ -240,6 +245,7 @@ h2 {
     margin-right: 20px; /* Atur jarak antar anggota */
 }
 
+
 /* info */
 .info-box, .download-box, .agenda-box {
     border: 1px solid #03c03c;
@@ -273,12 +279,13 @@ h2 {
 }
 
 .footer-title {
-    font-size: 12px;
+    font-size: 10px;
     font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
 }
 
 .footer-link {
-    font-size: 13px;
     color: #007bff;
     text-decoration: none;
 }
@@ -300,6 +307,20 @@ h2 {
     height: 24px;
 }
 
+.social-icons li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-icons li:last-child {
+    margin-right: 0;
+}
+
+.social-icons img {
+    width: 30px;
+    height: auto;
+}
+
 .embed-responsive-16by9 {
     padding-bottom: 56.25%;
     height: 0;
@@ -318,3 +339,67 @@ h2 {
     height: 100%;
     border: 0;
 }
+
+/* Custom Gallery CSS */
+.thumbnail {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .thumbnail:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(-4px);
+  }
+  
+  .thumbnail img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+  
+  .thumbnail:hover .caption {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+/* styles.css */
+.embed-responsive {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
+}
+
+.embed-responsive::before {
+    display: block;
+    content: "";
+}
+
+.embed-responsive .embed-responsive-item,
+.embed-responsive iframe,
+.embed-responsive embed,
+.embed-responsive object,
+.embed-responsive video {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
