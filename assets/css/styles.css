@@ -186,7 +186,7 @@ body {
     flex-wrap: nowrap;
     overflow-x: auto; /* Munculkan scrollbar horizontal jika diperlukan */
     max-width: calc(100% - (lebar navbar));
-    background: url('assets/img/fakultas pertanian.png')
+    background: url('assets/img/logo/fakultas pertanian.jpg')
 }
 
 .container {
@@ -257,6 +257,7 @@ h2 {
     text-align: center;
 }
 
+/* footer */
 .list-unstyled li {
     padding: 5px 0;
 }
@@ -269,4 +270,51 @@ h2 {
     flex: 1;
     margin-right: 15px;
     margin-left: 15px;
+}
+
+.footer-title {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.footer-link {
+    font-size: 13px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+.contact-info p {
+    margin-bottom: 0.5rem;
+}
+
+.contact-info i {
+    margin-right: 8px;
+}
+
+.list-inline-item img {
+    width: 24px;
+    height: 24px;
+}
+
+.embed-responsive-16by9 {
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.embed-responsive-16by9 .embed-responsive-item {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
 }
