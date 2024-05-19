@@ -279,7 +279,7 @@ h2 {
 }
 
 .footer-title {
-    font-size: 10px;
+    font-size: 1.2rem;
     font-weight: bold;
     color: #333;
     margin-bottom: 10px;
@@ -297,10 +297,14 @@ h2 {
 .contact-info p {
     margin-bottom: 0.5rem;
     font-size: 15;
+    display: flex;
+    align-items: center;
 }
 
 .contact-info i {
-    margin-right: 8px;
+    margin-right: 10px;
+    width: 20px; /* Adjust the size as needed */
+    height: auto;
 }
 
 .list-inline-item img {
@@ -339,6 +343,17 @@ h2 {
     width: 100%;
     height: 100%;
     border: 0;
+}
+@media (max-width: 767.98px) {
+    .order-md-1 {
+        order: 1;
+    }
+    .order-md-2 {
+        order: 2;
+    }
+    .order-md-3 {
+        order: 3;
+    }
 }
 
 /* Custom Gallery CSS */
