@@ -11,6 +11,12 @@
     font-weight: bold;
 }
 
+.header h1 {
+    text-align: center; /* Menyelaraskan teks ke tengah */
+    font-weight: bold; /* Membuat teks menjadi tebal */
+    font-size: 35px;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
