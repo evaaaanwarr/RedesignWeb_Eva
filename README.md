@@ -43,7 +43,7 @@
 ## Gambar Footer Before
 ![Gambar](https://github.com/evaaaanwarr/project-redesign-web-evamalianwar/blob/main/assets/img/ss%20website%20before/footer_before.png)
 
-#### Dibagian Footer saya tidak banyak mengubah saya hanya menghilang untuk lokasi dibagian contact karena menurut saya double untuk bagian lokasinya, serta saya menampilkan lokasi nya, dan untuk setiap judulnnya saya simpan di tengah, mungkin itu saja bagian" saya redesign
+#### Dibagian Footer saya tidak banyak mengubah saya hanya menghilang untuk lokasi dibagian contact karena menurut saya double untuk bagian lokasinya, serta saya menampilkan lokasi nya, dan untuk setiap judulnnya saya simpan di tengah, mungkin itu saja bagian" yang saya redesign
 
 ## Gambar Footer After
 ![Gambar](https://github.com/evaaaanwarr/project-redesign-web-evamalianwar/blob/main/assets/img/ss%20website%20after/footer_after.png)
